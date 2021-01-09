@@ -3,5 +3,5 @@
 
 <% @tasks.each do |task| %>
     <h5><%= link_to("#{task.title} #{task.completed}", "tasks/#{task.id}") %> </h5>
-    <%= link_to "Delete", task_path(task), method: :delete %>
+    <%= link_to "Delete", task_path(task.id), method: :delete %>
 <% end %>
